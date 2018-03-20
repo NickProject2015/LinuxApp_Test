@@ -11,10 +11,12 @@ namespace LinuxApp_Test
 {
     enum ElementProperty
     {
+
         Id,
         Name,
         ClassName,
         CssName
+
     }
     class Utilities
     {
@@ -36,21 +38,22 @@ namespace LinuxApp_Test
             ss.SaveAsFile("E:\\LinuxApp_Test\\ScreenShots\\" + "snapshot" + "_" + DateTime.Now.ToString("dd_MMMM_hh_mm_ss_tt") + ".png");
         }
     }
-    static class CheckDisplayElementClass
-    {
-        public static bool CheckDisplayElement(IWebElement element)
-        {
-            try
-            {
-                return element.Displayed{};
-            }
-            catch (Exception)
-            {
+    ////TODO: Check the method
+    //static class CheckDisplayElementClass
+    //{
+    //    public static bool CheckDisplayElement(IWebElement element)
+    //    {
+    //        try
+    //        {
+    //            return element.Displayed{};
+    //        }
+    //        catch (Exception)
+    //        {
 
-                throw;
-            }
-        }
-    }
+    //            throw;
+    //        }
+    //    }
+    //}
 }
 
 
